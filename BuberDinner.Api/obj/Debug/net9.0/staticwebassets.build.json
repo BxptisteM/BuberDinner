@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "C31gjGgSVNhuR7v3GwohvoX1hr+r17OZ35Dyu9VzWk8=",
+  "Source": "BuberDinner.Api",
+  "BasePath": "_content/BuberDinner.Api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

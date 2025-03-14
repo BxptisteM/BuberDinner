@@ -1,0 +1,12 @@
+/home/bxptistem/projects/BuberDinner/BuberDinner.Application/bin/Debug/net9.0/BuberDinner.Application.deps.json
+/home/bxptistem/projects/BuberDinner/BuberDinner.Application/bin/Debug/net9.0/BuberDinner.Application.dll
+/home/bxptistem/projects/BuberDinner/BuberDinner.Application/bin/Debug/net9.0/BuberDinner.Application.pdb
+/home/bxptistem/projects/BuberDinner/BuberDinner.Application/obj/Debug/net9.0/BuberDinner.Application.GeneratedMSBuildEditorConfig.editorconfig
+/home/bxptistem/projects/BuberDinner/BuberDinner.Application/obj/Debug/net9.0/BuberDinner.Application.AssemblyInfoInputs.cache
+/home/bxptistem/projects/BuberDinner/BuberDinner.Application/obj/Debug/net9.0/BuberDinner.Application.AssemblyInfo.cs
+/home/bxptistem/projects/BuberDinner/BuberDinner.Application/obj/Debug/net9.0/BuberDinner.Application.csproj.CoreCompileInputs.cache
+/home/bxptistem/projects/BuberDinner/BuberDinner.Application/obj/Debug/net9.0/BuberDinner.Application.sourcelink.json
+/home/bxptistem/projects/BuberDinner/BuberDinner.Application/obj/Debug/net9.0/BuberDinner.Application.dll
+/home/bxptistem/projects/BuberDinner/BuberDinner.Application/obj/Debug/net9.0/refint/BuberDinner.Application.dll
+/home/bxptistem/projects/BuberDinner/BuberDinner.Application/obj/Debug/net9.0/BuberDinner.Application.pdb
+/home/bxptistem/projects/BuberDinner/BuberDinner.Application/obj/Debug/net9.0/ref/BuberDinner.Application.dll
