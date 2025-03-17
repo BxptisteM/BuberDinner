@@ -41,3 +41,14 @@
 /home/bxptistem/projects/BuberDinner/BuberDinner.Api/bin/Debug/net9.0/BuberDinner.Infrastructure.pdb
 /home/bxptistem/projects/BuberDinner/BuberDinner.Api/bin/Debug/net9.0/BuberDinner.Domain.pdb
 /home/bxptistem/projects/BuberDinner/BuberDinner.Api/bin/Debug/net9.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll
+/home/bxptistem/projects/BuberDinner/BuberDinner.Api/bin/Debug/net9.0/Microsoft.IdentityModel.Abstractions.dll
+/home/bxptistem/projects/BuberDinner/BuberDinner.Api/bin/Debug/net9.0/Microsoft.IdentityModel.JsonWebTokens.dll
+/home/bxptistem/projects/BuberDinner/BuberDinner.Api/bin/Debug/net9.0/Microsoft.IdentityModel.Logging.dll
+/home/bxptistem/projects/BuberDinner/BuberDinner.Api/bin/Debug/net9.0/Microsoft.IdentityModel.Tokens.dll
+/home/bxptistem/projects/BuberDinner/BuberDinner.Api/bin/Debug/net9.0/System.IdentityModel.Tokens.Jwt.dll
+/home/bxptistem/projects/BuberDinner/BuberDinner.Api/bin/Debug/net9.0/Microsoft.Extensions.Configuration.dll
+/home/bxptistem/projects/BuberDinner/BuberDinner.Api/bin/Debug/net9.0/Microsoft.Extensions.Configuration.Abstractions.dll
+/home/bxptistem/projects/BuberDinner/BuberDinner.Api/bin/Debug/net9.0/Microsoft.Extensions.Configuration.Binder.dll
+/home/bxptistem/projects/BuberDinner/BuberDinner.Api/bin/Debug/net9.0/Microsoft.Extensions.Options.dll
+/home/bxptistem/projects/BuberDinner/BuberDinner.Api/bin/Debug/net9.0/Microsoft.Extensions.Options.ConfigurationExtensions.dll
+/home/bxptistem/projects/BuberDinner/BuberDinner.Api/bin/Debug/net9.0/Microsoft.Extensions.Primitives.dll
