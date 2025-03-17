@@ -10,3 +10,7 @@
 /home/bxptistem/projects/BuberDinner/BuberDinner.Application/obj/Debug/net9.0/refint/BuberDinner.Application.dll
 /home/bxptistem/projects/BuberDinner/BuberDinner.Application/obj/Debug/net9.0/BuberDinner.Application.pdb
 /home/bxptistem/projects/BuberDinner/BuberDinner.Application/obj/Debug/net9.0/ref/BuberDinner.Application.dll
+/home/bxptistem/projects/BuberDinner/BuberDinner.Application/bin/Debug/net9.0/BuberDinner.Domain.dll
+/home/bxptistem/projects/BuberDinner/BuberDinner.Application/bin/Debug/net9.0/BuberDinner.Domain.pdb
+/home/bxptistem/projects/BuberDinner/BuberDinner.Application/obj/Debug/net9.0/BuberDinner.Application.csproj.AssemblyReference.cache
+/home/bxptistem/projects/BuberDinner/BuberDinner.Application/obj/Debug/net9.0/BuberDin.E7CA8231.Up2Date

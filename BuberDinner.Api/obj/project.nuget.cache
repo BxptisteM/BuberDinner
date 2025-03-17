@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "hRO+Cei6Jjo=",
+  "dgSpecHash": "Kly6OP43y2c=",
   "success": true,
   "projectFilePath": "/home/bxptistem/projects/BuberDinner/BuberDinner.Api/BuberDinner.Api.csproj",
   "expectedPackageFiles": [
     "/home/bxptistem/.nuget/packages/microsoft.aspnetcore.openapi/9.0.2/microsoft.aspnetcore.openapi.9.0.2.nupkg.sha512",
+    "/home/bxptistem/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/9.0.3/microsoft.extensions.dependencyinjection.abstractions.9.0.3.nupkg.sha512",
     "/home/bxptistem/.nuget/packages/microsoft.openapi/1.6.17/microsoft.openapi.1.6.17.nupkg.sha512"
   ],
   "logs": []

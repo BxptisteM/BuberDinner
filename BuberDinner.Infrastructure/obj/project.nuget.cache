@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "2d6ax9cnsBQ=",
+  "dgSpecHash": "FL27XO2Rr64=",
   "success": true,
   "projectFilePath": "/home/bxptistem/projects/BuberDinner/BuberDinner.Infrastructure/BuberDinner.Infrastructure.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "/home/bxptistem/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/9.0.3/microsoft.extensions.dependencyinjection.abstractions.9.0.3.nupkg.sha512"
+  ],
   "logs": []
 }

@@ -32,3 +32,12 @@
 /home/bxptistem/projects/BuberDinner/BuberDinner.Api/obj/Debug/net9.0/BuberDinner.Api.pdb
 /home/bxptistem/projects/BuberDinner/BuberDinner.Api/obj/Debug/net9.0/BuberDinner.Api.genruntimeconfig.cache
 /home/bxptistem/projects/BuberDinner/BuberDinner.Api/obj/Debug/net9.0/ref/BuberDinner.Api.dll
+/home/bxptistem/projects/BuberDinner/BuberDinner.Api/bin/Debug/net9.0/BuberDinner.Application.dll
+/home/bxptistem/projects/BuberDinner/BuberDinner.Api/bin/Debug/net9.0/BuberDinner.Contracts.dll
+/home/bxptistem/projects/BuberDinner/BuberDinner.Api/bin/Debug/net9.0/BuberDinner.Domain.dll
+/home/bxptistem/projects/BuberDinner/BuberDinner.Api/bin/Debug/net9.0/BuberDinner.Infrastructure.dll
+/home/bxptistem/projects/BuberDinner/BuberDinner.Api/bin/Debug/net9.0/BuberDinner.Contracts.pdb
+/home/bxptistem/projects/BuberDinner/BuberDinner.Api/bin/Debug/net9.0/BuberDinner.Application.pdb
+/home/bxptistem/projects/BuberDinner/BuberDinner.Api/bin/Debug/net9.0/BuberDinner.Infrastructure.pdb
+/home/bxptistem/projects/BuberDinner/BuberDinner.Api/bin/Debug/net9.0/BuberDinner.Domain.pdb
+/home/bxptistem/projects/BuberDinner/BuberDinner.Api/bin/Debug/net9.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll
