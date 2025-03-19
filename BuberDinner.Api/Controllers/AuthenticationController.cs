@@ -1,29 +1,37 @@
 using Microsoft.AspNetCore.Mvc;
-using BuberDinner.Application.Services.Authentication;
-using BuberDinner.Contracts.Authentication;
 using ErrorOr;
+using BuberDinner.Application.Services.Authentication.Commands;
+using BuberDinner.Application.Services.Authentication.Queries;
+using BuberDinner.Contracts.Authentication;
 using BuberDinner.Domain.Common.Errors;
+using BuberDinner.Application.Services.Authentication;
+using MediatR;
+using BuberDinner.Application.Authentication.Commands.Register;
+using BuberDinner.Application.Authentication.Common;
+using BuberDinner.Application.Authentication.Queries.Login;
 
 namespace BuberDinner.Api.Controllers;
 
 [Route("auth")]
 public class AuthenticationController : ApiController
 {
-    private readonly IAuthenticationService _authenticationService;
+    private readonly ISender _mediator;
 
-    public AuthenticationController(IAuthenticationService authenticationService)
+    public AuthenticationController(ISender mediator)
     {
-        _authenticationService = authenticationService;
+        _mediator = mediator;
     }
 
     [HttpPost("register")]
-    public IActionResult Register(BuberDinner.Contracts.Authentication.RegisterRequest request)
+    public async Task<IActionResult> Register(BuberDinner.Contracts.Authentication.RegisterRequest request)
     {
-        ErrorOr.ErrorOr<AuthenticationResult> authResult = _authenticationService.Register(
+        var command = new RegisterCommand(
             request.FirstName,
             request.LastName,
             request.Email,
             request.Password);
+
+        ErrorOr.ErrorOr<BuberDinner.Application.Authentication.Common.AuthenticationResult> authResult = await _mediator.Send(command);
 
         return authResult.Match(
             authResult => Ok(MapAuthResult(authResult)),
@@ -32,11 +40,13 @@ public class AuthenticationController : ApiController
     }
 
     [HttpPost("login")]
-    public IActionResult Login(BuberDinner.Contracts.Authentication.LoginRequest request)
+    public async Task<IActionResult> Login(BuberDinner.Contracts.Authentication.LoginRequest request)
     {
-        var authResult = _authenticationService.Login(
+        var query = new LoginQuery(
             request.Email,
             request.Password);
+
+        var authResult = await _mediator.Send(query);
 
         if (authResult.IsError && authResult.FirstError == Errors.Authentication.InvalidCredentials)
         {
@@ -50,7 +60,8 @@ public class AuthenticationController : ApiController
             errors => Problem(errors)
         );
     }
-    private static AuthenticationResponse MapAuthResult(ErrorOr<AuthenticationResult> authResult)
+
+    private static AuthenticationResponse MapAuthResult(ErrorOr<BuberDinner.Application.Authentication.Common.AuthenticationResult> authResult)
     {
         var response = new AuthenticationResponse(
             authResult.Value.User.Id,
