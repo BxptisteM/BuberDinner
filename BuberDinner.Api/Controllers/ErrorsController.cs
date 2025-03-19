@@ -1,3 +1,4 @@
+using BuberDinner.Application.Common.Errors;
 using Microsoft.AspNetCore.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 
@@ -8,11 +9,14 @@ public class ErrorsController : ControllerBase
     [Route("/error")]
     public IActionResult Error()
     {
-        var exceptionHandlerFeature = HttpContext.Features.Get<IExceptionHandlerFeature>();
-        if (exceptionHandlerFeature?.Error is Exception exception)
+        Exception? exception = HttpContext.Features.Get<IExceptionHandlerFeature>()?.Error;
+
+        var (statusCode, message) = exception switch
         {
-            return Problem();
-        }
-        return Problem();
+            IServiceException serviceException => ((int)serviceException.StatusCode, serviceException.ErrorMessage),
+            _ => (500, "An unexpected error occurred.")
+        };
+
+        return Problem(statusCode: statusCode, title: message);
     }
 }

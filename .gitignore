@@ -1,3 +1,11 @@
 .idea
 BuberDinner.Api/bin
 BuberDinner.Api/obj
+BuberDinner.Application/bin
+BuberDinner.Application/obj
+BuberDinner.Contracts/bin
+BuberDinner.Contracts/obj
+BuberDinner.Domain/bin
+BuberDinner.Domain/obj
+BuberDinner.Infrastructure/bin
+BuberDinner.Infrastructure/obj
