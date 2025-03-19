@@ -5,11 +5,9 @@ using BuberDinner.Api.Errors;
 
 var builder = WebApplication.CreateBuilder(args);
 {
-    builder.Services.AddApplication();
-    builder.Services.AddInfrastructure(builder.Configuration);
     builder.Services.AddControllers();
+    builder.Services.AddApplication().AddInfrastructure(builder.Configuration);
     builder.Services.AddSingleton<ProblemDetailsFactory, BuberDinnerProblemDetailsFactory>();
-    builder.Services.AddEndpointsApiExplorer();
 }
 
 var app = builder.Build();
