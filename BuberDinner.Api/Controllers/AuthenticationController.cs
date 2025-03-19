@@ -2,6 +2,7 @@ using Microsoft.AspNetCore.Identity.Data;
 using Microsoft.AspNetCore.Mvc;
 using BuberDinner.Application.Services.Authentication;
 using BuberDinner.Contracts.Authentication;
+using BuberDinner.Api.Filters;
 
 namespace BuberDinner.Api.Controllers;
 
@@ -15,7 +16,7 @@ public class AuthenticationController : ControllerBase
     {
         _authenticationService = authenticationService;
     }
-    
+
     [HttpPost("register")]
     public IActionResult Register(BuberDinner.Contracts.Authentication.RegisterRequest request)
     {
