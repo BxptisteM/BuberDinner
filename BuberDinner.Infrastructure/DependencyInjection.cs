@@ -14,11 +14,18 @@ public static class DependencyInjection
     public static IServiceCollection AddInfrastructure(this IServiceCollection services,
             ConfigurationManager configuration)
     {
-        services.Configure<JwtSettings>(configuration.GetSection(JwtSettings.SectionName));
-        services.AddSingleton<IJwtTokenGenerator, JwtTokenGenerator>();
+        services.AddAuth(configuration);
         services.AddSingleton<IDateTimeProvider, DateTimeProvider>();
 
         services.AddScoped<IUserRepository, UserRepository>();
         return services;
+    }
+
+    public static IServiceCollection AddAuth(
+        this IServiceCollection services,
+        IConfiguration configuration)
+    {
+        services.Configure<JwtSettings>(configuration.GetSection(JwtSettings.SectionName));
+        services.AddSingleton<IJwtTokenGenerator, JwtTokenGenerator>();
     }
 }
