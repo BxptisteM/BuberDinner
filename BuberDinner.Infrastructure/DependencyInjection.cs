@@ -6,6 +6,7 @@ using BuberDinner.Infrastructure.Persistence;
 using BuberDinner.Infrastructure.Services;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Configuration;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 
 namespace BuberDinner.Infrastructure;
 
@@ -21,11 +22,12 @@ public static class DependencyInjection
         return services;
     }
 
-    public static IServiceCollection AddAuth(
-        this IServiceCollection services,
-        IConfiguration configuration)
+    public static IServiceCollection AddAuth(this IServiceCollection services,
+            IConfiguration configuration)
     {
         services.Configure<JwtSettings>(configuration.GetSection(JwtSettings.SectionName));
         services.AddSingleton<IJwtTokenGenerator, JwtTokenGenerator>();
+
+        services.AddAuthentication(defaultScheme: JwtBearerDefaults.AuthenticationScheme);
     }
 }
